@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1400">
+    <title>황온유황온천</title>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- 달력 css -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- 폰트 css -->
+    <link rel="stylesheet" href="./css/font.css">
+
+    <!-- 꾸미는 css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- 상단 메뉴 -->
+    <header id="top">
+        <!-- 한영 전환 -->
+        <a href="#" class="top_in">
+            <img src="./img/global.png" alt="글로벌">
+        </a>
+        <select>
+            <option value="kr">KR</option>
+            <option value="en">EN</option>
+        </select>
+
+        <!-- 로고와 메뉴 -->
+        <div class="menu">
+            <a href="#"><img src="./img/mainlogo.png" alt="로고"></a>
+            <ul class="nav">
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">ROOMS</a></li>
+                <li><a href="#">PROGRAM</a></li>
+                <li><a href="#">STORE</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+            </ul>
+        </div>
+
+        <!-- 로그인 -->
+        <a href="#" class="top_in"><img src="./img/login.png" alt="로그인"></a>
+    </header>
+
+
+
+    <!--메인 배너 슬라이드 -->
+    <div class="main">
+        <!-- 슬라이드 -->
+        <div class="swiper fade">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bg1">
+                    <div class="main_text">
+                        <h5>SPA & RESORT</h5>
+                        <h1>황온유황온천, 스파리조트</h1>
+                        <h4>프라이빗하게 즐기는 힐링 온천</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide bg2">
+                    <div class="main_text">
+                        <h5>Comfort in Nature</h5>
+                        <h1>자연이 빚은 포근함, 황온
+                        </h1>
+                        <h4>깊이 스며드는 부드러운 온기</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide bg3">
+                    <div class="main_text">
+                        <h5>프라이빗, 그 이상의 여유</h5>
+                        <h1>하루의 끝을 오롯이 느끼는 순간</h1>
+                        <h4>지금 이 고요함을 만나보세요
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- 예약 창 -->
+        <ul class="reserve">
+            <!-- 좌측/달력 -->
+            <li class="left">
+                <h6>CHECK IN / OUT</h6>
+                <input type="text" name="from" id="from" value="YYYY-MM-DD">
+                &nbsp;
+                &nbsp;
+                <input type="text" name="to" id="to" value="YYYY-MM-DD">
+            </li>
+
+            <!-- 좌측/카운트 -->
+            <li>
+                <h6>ADULT</h6>
+                <div class="__count_range">
+                    <input value="-" count_range="m" type="button">
+                    <input class="count" value="1" readonly="">
+                    <input value="+" count_range="p" type="button">
+                </div>
+            </li>
+            <li>
+                <h6>CHILD</h6>
+                <div class="__count_range">
+                    <input value="-" count_range="m" type="button">
+                    <input class="count" value="1" readonly="">
+                    <input value="+" count_range="p" type="button">
+                </div>
+            </li>
+
+            <!-- 좌측/프로모션 -->
+             <li class="promotion" >
+                <h6>PROMOTION</h6>
+                    <input type="text" placeholder="Insert Code">
+            </li>
+
+            <!-- 우측/예약 버튼 -->
+            <li>
+                <a href="#" class="btn">ROOM + SPA</a>
+                <a href="#" class="btn">ROOM ONLY</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="about">
+        <h2 data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">ABOUT</h2>
+        <div class="line" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"></div>
+        <p class="same" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">자연 그대로의 유황 온천수가 흐르는 황온유황온천은
+            <br>
+            유황 성분이 지닌 깊은 치유력을 온전히 담은 특별한 공간입니다. <br>
+            <br>
+            일반 온천과는 차원이 다른, 자연 유래 유황의 특별한 경험을 <br>오직 황온유황온천에서 만나보세요. <br>
+            <br>
+            황온해서, 황홀한 순간. <br>
+            황온유황온천
+        </p>
+    </div>
+
+    <!-- 브랜드 가치 -->
+    <!-- 1 -->
+    <div class="brand">
+        <div class="brand_bg1">
+            <div class="b_text" data-aos="fade-right" data-aos-delay="500" data-aos-duration="5000">
+                <h1>healing</h1>
+                <p>황온유황온천은 자연과 가장 가까운 곳에서 <br>
+                    걷기만 해도 치유가 되는 산책길, 마음을 비우는 명상 공간, <br>
+                    몸을 다스리는 온천 테라피 프로그램 등 다양한 힐링 요소들을 갖추고 있습니다.
+                    <br>
+                    <br>
+                    온천의 효능에 자연과 휴식이 더해져,<br>
+                    단순한 여행이 아닌 깊은 회복과 재충전의 시간을 선사합니다.
+                </p>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="brand_bg2">
+            <div class="b_text_r" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
+                <h1>skincare</h1>
+                <p>황온의 유황온천수는 자연이 선물한 가장 순수한 피부 케어입니다. <br>
+                    모공 속 노폐물을 황온유황온천수로 부드럽게 정화하고, <br>
+                    피지 밸런스를 맞춰 건강한 피부 리듬을 되찾아 보세요. <br>
+                    <br>
+                    풍부한 미네랄은 피부에 깊은 보습과 활력을 채워주며, <br>
+                    맑고 생기 있는 피부로 가꾸어줍니다.
+                </p>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="brand_bg3">
+            <div class="b_text" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+                <h1>therapy</h1>
+                <p>유황 성분이 풍부한 황온의 온천수는 몸속 깊은 곳까지 스며들어 <br>
+                    만성피로와 근육통, 관절염, 피부 트러블 등 다양한 증상 완화에 도움을 줍니다. <br>
+                    <br>
+                    또한, 체내 순환을 촉진하고 면역력을 강화하는
+                    유황의 자연 치유력이<br>
+                    전문 테라피 프로그램과 만나 시너지를 이룹니다.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 건강한 변화 유황에서 찾다 -->
+    <div class="sulfur_bg">
+        <h4 data-aos="zoom-in" data-aos-duration="10">
+            건강한 변화, 유황에서 찾다
+        </h4>
+        <ul class="sulfur">
+            <!-- 1피부 -->
+            <li>
+                <h5 data-aos="fade-up" data-aos-delay="100">피부 건강 개선</h5>
+                <div class="img_box" data-aos="fade-up" data-aos-delay="100">
+                    <a href="#"><img src="./img/sulfur_1.png" alt="피부"></a>
+
+                    <img src="./img/heartplus.png" alt="피부건강" class="img1">
+                </div>
+
+                <img src="./img/blit3.png" alt="연결고리" class="blit" data-aos="fade-up">
+
+                <p data-aos="fade-up">
+                    항균 및 항염 효과로 여드름, 지루성 피부염, 습진 등 <br>
+                    피부 질환 치료에 도움을 줍니다. <br>
+                    각질 제거와 피지 조절에도 효과적이며, <br>
+                    피부를 청결하고 건강하게 유지하는 데 기여합니다.
+                </p>
+            </li>
+
+            <!-- 2관절 -->
+            <li>
+                <h5 data-aos="fade-up" data-aos-delay="100">관절 및 염증 완화</h5>
+                <div class="img_box" data-aos="fade-up" data-aos-delay="100">
+                    <a href="#"><img src="./img/sulfur_2.png" alt="관절"></a>
+
+                    <img src="./img/joint.png" alt="관절" class="img1">
+                </div>
+
+                <img src="./img/blit3.png" alt="연결고리" class="blit" data-aos="fade-up">
+
+                <p data-aos="fade-up">
+                    유기 유황(MSM, Methylsulfonylmethane)의<br>
+                    관절 통증 완화와 염증 감소 효과로<br>
+                    관절염이나 근육통 완화를 도와줍니다. <br>
+                    항염 작용을 통해 운동 후 회복에도 도움을 줄 수 있습니다.
+                </p>
+            </li>
+
+            <!-- 3해독 -->
+            <li>
+                <h5 data-aos="fade-up" data-aos-delay="100">해독 작용 및 간 기능 지원</h5>
+                <div class="img_box" data-aos="fade-up" data-aos-delay="100">
+                    <a href="#"><img src="./img/sulfur_3.png" alt="해독"></a>
+
+                    <img src="./img/detox.png" alt="해독" class="img1">
+                </div>
+
+                <img src="./img/blit3.png" alt="연결고리" class="blit" data-aos="fade-up">
+
+                <p data-aos="fade-up">
+                    유기 유황(MSM, Methylsulfonylmethane)의<br>
+                    관절 통증 완화와 염증 감소 효과로<br>
+                    관절염이나 근육통 완화를 도와줍니다. <br>
+                    항염 작용을 통해 운동 후 회복에도 도움을 줄 수 있습니다.
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ROOMS -->
+    <div class="room_box">
+        <div class="room_in">
+            <h2>ROOMS</h2>
+            <div class="line"></div>
+            <p class="same">‘황온’은 전통 온돌의 따뜻함과 심플한 구조를 더해 안락한 휴식을 선사하고 있습니다.</p>
+
+            <!-- 룸 페이드/슬라이드 -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- 1 -->
+                    <div class="swiper-slide">
+                        <!-- 룸 사진 -->
+                        <div class="room_img">
+                            <h4 class="room_name">Standard Ondol </h4>
+                            <img src="./img/room1.png" alt="온돌">
+                        </div>
+                        <!-- 룸 설명 -->
+                        <div class="room_text">
+                            <h5>객실 정보</h5>
+                            <table>
+                                <tr>
+                                    <th>객실 구조</th>
+                                    <td>룸1, 거실1, 욕실1</td>
+                                </tr>
+
+                                <tr>
+                                    <th>객실 유형</th>
+                                    <td>Standard Ondol</td>
+                                </tr>
+
+                                <tr>
+                                    <th>객실 요금</th>
+                                    <td>정상가 520,000</td>
+                                </tr>
+
+                                <tr>
+                                    <th>기준/최대인원</th>
+                                    <td>4/5</td>
+                                </tr>
+
+                                <tr>
+                                    <th>배드타입</th>
+                                    <td>Double+Single / Double+Bunker</td>
+                                </tr>
+
+                                <tr>
+                                    <th>객실어메니티 </th>
+                                    <td> </td>
+                                </tr>
+
+                            </table>
+                            <div class="room_icons">
+                                <img src="./img/hotel.png" alt="침대">
+                                <img src="./img/bathtub.png" alt="욕조">
+                                <img src="./img/kitchen.png" alt="냉장고">
+                                <img src="./img/dresser.png" alt="옷장">
+                                <img src="./img/chair.png" alt="소파">
+                                <img src="./img/dry_cleaning.png" alt="드라이클리닝">
+                                <img src="./img/desktop_mac.png" alt="TV">
+                            </div>
+                        </div>
+                        <a href="#" class="more">More
+                            <img src="./img/more_arrow.png" alt="더보기 화살표">
+                        </a>
+                    </div>
+                    <!-- 2 -->
+                    <div class="swiper-slide">
+                        <!-- 룸 사진 -->
+                        <div class="room_img">
+                            <h4 class="room_name">Standard twin </h4>
+                            <img src="./img/room2.png" alt="온돌">
+                        </div>
+                        <!-- 룸 설명 -->
+                        <div class="room_text">
+                            <h5>객실 정보</h5>
+                            <table>
+                                <tr>
+                                    <th>객실 구조</th>
+                                    <td>룸1, 거실1, 욕실1</td>
+                                </tr>
+
+                                <tr>
+                                    <th>객실 유형</th>
+                                    <td>Standard twin</td>
+                                </tr>
+
+                                <tr>
+                                    <th>객실 요금</th>
+                                    <td>정상가 600,000</td>
+                                </tr>
+
+                                <tr>
+                                    <th>기준/최대인원</th>
+                                    <td>6/7</td>
+                                </tr>
+
+                                <tr>
+                                    <th>배드타입</th>
+                                    <td>Double+Bunker</td>
+                                </tr>
+
+                                <tr>
+                                    <th>객실어메니티 </th>
+                                    <td> </td>
+                                </tr>
+
+                            </table>
+                            <div class="room_icons">
+                                <img src="./img/hotel.png" alt="침대">
+                                <img src="./img/bathtub.png" alt="욕조">
+                                <img src="./img/kitchen.png" alt="냉장고">
+                                <img src="./img/dresser.png" alt="옷장">
+                                <img src="./img/chair.png" alt="소파">
+                                <img src="./img/dry_cleaning.png" alt="드라이클리닝">
+                                <img src="./img/desktop_mac.png" alt="TV">
+                            </div>
+                        </div>
+                        <a href="#" class="more">More
+                            <img src="./img/more_arrow.png" alt="더보기 화살표">
+                        </a>
+                    </div>
+                    <!-- 3 -->
+                    <div class="swiper-slide">
+                        <!-- 룸 사진 -->
+                        <div class="room_img">
+                            <h4 class="room_name">Suite Deluxe </h4>
+                            <img src="./img/room3.png" alt="온돌">
+                        </div>
+                        <!-- 룸 설명 -->
+                        <div class="room_text">
+                            <h5>객실 정보</h5>
+                            <table>
+                                <tr>
+                                    <th>객실 구조</th>
+                                    <td>룸1, 거실1, 욕실1</td>
+                                </tr>
+
+                                <tr>
+                                    <th>객실 유형</th>
+                                    <td>Standard Deluxe</td>
+                                </tr>
+
+                                <tr>
+                                    <th>객실 요금</th>
+                                    <td>정상가 570,000</td>
+                                </tr>
+
+                                <tr>
+                                    <th>기준/최대인원</th>
+                                    <td>7/8</td>
+                                </tr>
+
+                                <tr>
+                                    <th>배드타입</th>
+                                    <td>Double+Bunker</td>
+                                </tr>
+
+                                <tr>
+                                    <th>객실어메니티 </th>
+                                    <td> </td>
+                                </tr>
+
+                            </table>
+                            <div class="room_icons">
+                                <img src="./img/hotel.png" alt="침대">
+                                <img src="./img/bathtub.png" alt="욕조">
+                                <img src="./img/kitchen.png" alt="냉장고">
+                                <img src="./img/dresser.png" alt="옷장">
+                                <img src="./img/chair.png" alt="소파">
+                                <img src="./img/dry_cleaning.png" alt="드라이클리닝">
+                                <img src="./img/desktop_mac.png" alt="TV">
+                            </div>
+                        </div>
+                        <a href="#" class="more">More
+                            <img src="./img/more_arrow.png" alt="더보기 화살표" class="arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next r_next"></div>
+        <div class="swiper-button-prev r_left"></div>
+    </div>
+
+    <!-- PROGRAM -->
+    <div class="program_box">
+        <div class="program_wrap">
+            <h2>PROGRAM</h2>
+            <div class="line"></div>
+            <p class="same2">내 몸과 마음이 원하는 진짜 힐링, 지금 여기에서. <br>
+                다양한 자연 친화 프로그램을 만나보세요.</p>
+            <a href="#" class="more2">More
+                <img src="./img/more_arrow.png" alt="더보기 화살표">
+            </a>
+            <!-- 스크롤 슬라이드 -->
+
+            <ul id="scroller">
+                <!-- 1 -->
+                <li>
+                    <div class="p_imgbox">
+                        <a href="#"><img src="./img/skinpack.png" alt="팩"></a>
+                    </div>
+
+                    <div class="p_text">
+                        <h6>피부 타입별 맞춤 팩</h6>
+                        <p>전문 스킨케어 컨설턴트가 안내하는 <br>
+                            1:1 맞춤 팩 체험 프로그램</p>
+                        <span>소요시간 : 약 40분</span>
+                        <a href="#">신청하기</a>
+                    </div>
+                </li>
+                <!-- 2 -->
+                <li>
+                    <div class="p_imgbox">
+                        <a href="#"><img src="./img/tea.png" alt="다도"></a>
+                    </div>
+
+                    <div class="p_text">
+                        <h6>차 한 잔의 쉼표</h6>
+                        <p>차 한 잔에 담긴
+                            우리 고유의 예절과 미학을<br>
+                            직접 느껴보는
+                            특별한 시간</p>
+                        <span>소요시간 : 약 1시간</span>
+                        <a href="#">신청하기</a>
+                    </div>
+                </li>
+                <!-- 3 -->
+                <li>
+                    <div class="p_imgbox">
+                        <a href="#"><img src="./img/forest.png" alt="숲길"></a>
+                    </div>
+
+                    <div class="p_text">
+                        <h6>자연을 걷다</h6>
+                        <p>전문 숲 해설사와 함께하는
+                            자연을 걷는 시간<br>내면 깊은 곳까지의 힐링</p>
+                        <span>소요시간 : 약 1시간 30분</span>
+                        <a href="#">신청하기</a>
+                    </div>
+                </li>
+                <!-- 4 -->
+                <li>
+                    <div class="p_imgbox">
+                        <a href="#"><img src="./img/exercise.png" alt="운동"></a>
+                    </div>
+
+                    <div class="p_text">
+                        <h6>몸을 깨우고,
+                            마음을 비우다</h6>
+                        <p>전문 요가 강사와 함께하는
+                            몸의 긴장을 풀고<br>
+                            마음의 균형을
+                            되찾는 시간</p>
+                        <span>소요시간 : 약 50분</span>
+                        <a href="#">신청하기</a>
+                    </div>
+                </li>
+                <!-- 5 -->
+                <li>
+                    <div class="p_imgbox">
+                        <a href="#"><img src="./img/cook.png" alt="요리"></a>
+                    </div>
+
+                    <div class="p_text">
+                        <h6>자연을 요리하다</h6>
+                        <p>자연 본연의
+                            맛을 살린 건강한 레시피와 <br>
+                            삶의 방식을
+                            배워가는 시간</p>
+                        <span>소요시간 : 약 2시간 </span>
+                        <a href="#">신청하기</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- 중간배너 -->
+    <div class="c_banner">
+        <div class="c_banner_text">
+            <p>황온해서, 황홀한 경험</p>
+            <h4>황온에서 자연을 느껴보세요 <br>
+                첫방문 예약 시 10% 할인 혜택 제공</h4>
+            <a href="#">자세히 보기</a>
+        </div>
+    </div>
+
+    <!-- STORE -->
+    <div class="store_bg">
+        <div class="store">
+            <h2>STORE</h2>
+            <div class="line"></div>
+            <p class="same">온천의 치유를 일상으로.
+                이곳의 맑은 물, 따뜻한 유황, 순한 자연을 담았습니다.</p>
+
+            <!-- 탭메뉴 -->
+            <ul class="tabmenu">
+                <!-- 유황비누 -->
+                <li class="on"><a href="#none">유황비누</a>
+                    <div class="sulfur">
+                        <ol>
+                            <!-- 1 -->
+                            <li>
+                                <div class="product">
+                                    <a href="#"><img src="./img/soap1.png" alt="유황비누1"></a>
+                                    <img src="./img/num_1.png" alt="1">
+                                    <img src="./img/best.png" alt="best1">
+                                    <a href="#"><img src="./img/favorite.png" alt="관심" class="heart">
+                                    </a>
+                                    <a href="#"><img src="./img/bag.png" alt="장바구니" class="bag">
+                                    </a>
+                                </div>
+                                <h3><span>30%</span>17,500원<b>25,000원</b></h3>
+                                <h4>진주 유황비누</h4>
+                                <p>모든피부 / 고급 명품비누, 피부미용, 미백, 보습</p>
+                            </li>
+
+                            <!-- 2 -->
+                            <li>
+                                <div class="product">
+                                    <a href="#"><img src="./img/soap2.png" alt="유황비누2"></a>
+                                    <img src="./img/num_2.png" alt="2">
+                                    <img src="./img/best.png" alt="best1">
+                                    <a href="#"><img src="./img/favorite.png" alt="관심" class="heart">
+                                    </a>
+                                    <a href="#"><img src="./img/bag.png" alt="장바구니" class="bag">
+                                    </a>
+                                </div>
+                                <h3><span>30%</span>17,500원<b>25,000원</b></h3>
+                                <h4>녹차 유황비누</h4>
+                                <p>지성피부 / 트러블 케어, 보습, 각질, 화농 </p>
+                            </li>
+
+                            <!-- 3 -->
+                            <li>
+                                <div class="product">
+                                    <a href="#"><img src="./img/soap3.png" alt="유황비누3"></a>
+                                    <img src="./img/num_3.png" alt="3">
+                                    <img src="./img/best.png" alt="best1">
+                                    <a href="#"><img src="./img/favorite.png" alt="관심" class="heart">
+                                    </a>
+                                    <a href="#"><img src="./img/bag.png" alt="장바구니" class="bag">
+                                    </a>
+                                </div>
+                                <h3><span>30%</span>17,500원<b>25,000원</b></h3>
+                                <h4>아토미네랄 유황비누</h4>
+                                <p>모든피부 / 트러블 케어, 보습, 각질</p>
+                            </li>
+
+                            <!-- 4 -->
+                            <li>
+                                <div class="product">
+                                    <a href="#"><img src="./img/soap4.png" alt="유황비누4"></a>
+                                    <img src="./img/num_4.png" alt="4">
+                                    <img src="./img/best.png" alt="best1">
+                                    <a href="#"><img src="./img/favorite.png" alt="관심" class="heart">
+                                    </a>
+                                    <a href="#"><img src="./img/bag.png" alt="장바구니" class="bag">
+                                    </a>
+                                </div>
+                                <h3><span>30%</span>17,500원<b>25,000원</b></h3>
+                                <h4>청대 유황비누</h4>
+                                <p>지복합성피부 / 트러블 케어, 보습, 각질</p>
+                            </li>
+
+
+                        </ol>
+                    </div>
+                </li>
+
+                <!-- 유황바디워시 -->
+                <li><a href="#none">유황바디워시</a>
+                    <div class="sulfur">
+                        <ol>
+                            <!-- 1 -->
+                            <li>
+                                <div class="product">
+                                    <a href="#">
+                                        <img src="./img/wash1.png" alt="바디워시1">
+                                    </a>
+                                    <img src="./img/num_1.png" alt="1">
+                                    <img src="./img/best.png" alt="best1">
+
+                                    <a href="#"><img src="./img/favorite.png" alt="관심" class="heart">
+                                    </a>
+                                    <a href="#"><img src="./img/bag.png" alt="장바구니" class="bag">
+                                    </a>
+                                </div>
+                                <h3><span>30%</span>22,400원<b>32,000원</b></h3>
+                                <h4>라벤더 바디워시</h4>
+                                <p>부드러운 라벤더 꽃 향기, 은은한 플로럴</p>
+                            </li>
+
+                            <!-- 2 -->
+                            <li>
+                                <div class="product">
+                                    <a href="#"><img src="./img/wash2.png" alt="바디워시2"> </a>
+                                    <img src="./img/num_2.png" alt="2">
+                                    <img src="./img/best.png" alt="best1">
+
+                                    <a href="#"><img src="./img/favorite.png" alt="관심" class="heart">
+                                    </a>
+                                    <a href="#"><img src="./img/bag.png" alt="장바구니" class="bag">
+                                    </a>
+                                </div>
+                                <h3><span>30%</span>22,400원<b>32,000원</b></h3>
+                                <h4>선샤인 바디워시</h4>
+                                <p>시트러스 + 플로럴 + 머스크</p>
+                            </li>
+
+                            <!-- 3 -->
+                            <li>
+                                <div class="product">
+                                    <a href="#"><img src="./img/wash3.png" alt="바디워시3"></a>
+                                    <img src="./img/num_3.png" alt="3">
+                                    <img src="./img/best.png" alt="best1">
+                                    <a href="#" class="heart"><img src="./img/favorite.png" alt="관심">
+                                    </a>
+                                    <a href="#" class="bag"><img src="./img/bag.png" alt="장바구니">
+                                    </a>
+                                </div>
+                                <h3><span>30%</span>22,400원<b>32,000원</b></h3>
+                                <h4>플라워 바디워시</h4>
+                                <p>꽃이 만개한 정원처럼 은은하고 부드러운 향</p>
+                            </li>
+
+                            <!-- 4 -->
+                            <li>
+                                <div class="product">
+                                    <a href="#"><img src="./img/wash4.png" alt="바디워시4"></a>
+                                    <img src="./img/num_4.png" alt="4">
+                                    <img src="./img/best.png" alt="best1">
+                                    <a href="#"><img src="./img/favorite.png" alt="관심" class="heart">
+                                    </a>
+                                    <a href="#"><img src="./img/bag.png" alt="장바구니" class="bag">
+                                    </a>
+                                </div>
+                                <h3><span>30%</span>22,400원<b>32,000원</b></h3>
+                                <h4>퓨어코튼 바디워시</h4>
+                                <p>갓 세탁한 하얀 이불처럼 포근하고 깨끗한 향기</p>
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+
+                <!-- 유황스킨케어 -->
+                <li><a href="#none">유황스킨케어</a>
+                    <div class="sulfur">
+                        <ol>
+                            <!-- 1 -->
+                            <li>
+                                <div class="product">
+                                    <a href="#"><img src="./img/p_care.png" alt="유황 로션"></a>
+                                    <img src="./img/num_1.png" alt="1">
+                                    <img src="./img/best.png" alt="best1">
+                                    <a href="#"><img src="./img/favorite.png" alt="관심" class="heart">
+                                    </a>
+                                    <a href="#"><img src="./img/bag.png" alt="장바구니" class="bag">
+                                    </a>
+                                </div>
+                                <h3><span>6%</span>14,900원<b>16,000원</b></h3>
+                                <h4>유황 로션</h4>
+                                <p>모든피부 / 고급 명품비누, 피부미용, 미백, 보습</p>
+                            </li>
+
+                            <!-- 2 -->
+                            <li>
+                                <div class="product">
+                                    <a href="#"><img src="./img/p_cream.png" alt="유황 크림"></a>
+                                    <img src="./img/num_2.png" alt="2">
+                                    <img src="./img/best.png" alt="best1">
+                                    <a href="#"><img src="./img/favorite.png" alt="관심" class="heart">
+                                    </a>
+                                    <a href="#"><img src="./img/bag.png" alt="장바구니" class="bag">
+                                    </a>
+                                </div>
+                                <h3><span>15%</span>25,500원<b>30,000원</b></h3>
+                                <h4>유황 크림</h4>
+                                <p>지성피부 / 트러블 케어, 보습, 각질, 화농 </p>
+                            </li>
+
+                            <!-- 3 -->
+                            <li>
+                                <div class="product">
+                                    <a href="3"><img src="./img/p_care2.png" alt="유황로션2"></a>
+                                    <img src="./img/num_3.png" alt="3">
+                                    <img src="./img/best.png" alt="best1">
+                                    <a href="#"><img src="./img/favorite.png" alt="관심" class="heart">
+                                    </a>
+                                    <a href="#"><img src="./img/bag.png" alt="장바구니" class="bag">
+                                    </a>
+                                </div>
+                                <h3><span>6%</span>14,900원<b>16,000원</b></h3>
+                                <h4>아토미네랄 유황로션</h4>
+                                <p>모든피부 / 트러블 케어, 보습, 각질</p>
+                            </li>
+
+                            <!-- 4 -->
+                            <li>
+                                <div class="product">
+                                    <a href="#"><img src="./img/p_cream2.png" alt="유황크림2"></a>
+                                    <img src="./img/num_4.png" alt="4">
+                                    <img src="./img/best.png" alt="best1">
+                                    <a href="#"><img src="./img/favorite.png" alt="관심" class="heart">
+                                    </a>
+                                    <a href="#"><img src="./img/bag.png" alt="장바구니" class="bag">
+                                    </a>
+                                </div>
+                                <h3><span>15%</span>25,500원<b>30,000원</b></h3>
+                                <h4>그린티 유황 크림</h4>
+                                <p>지복합성피부 / 트러블 케어, 보습, 각질</p>
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+
+                <!-- 유황패키지 -->
+                <li><a href="#none">유황패키지</a>
+                    <div class="sulfur">
+                        <ol>
+                            <!-- 1 -->
+                            <li>
+                                <div class="product">
+                                    <a href="#"><img src="./img/p_set.jpg" alt="패키지"></a>
+                                    <img src="./img/num_1.png"  alt="1">
+                                 
+                                    <a href="#"><img src="./img/favorite.png" alt="관심" class="heart">
+                                    </a>
+                                    <a href="#"><img src="./img/bag.png" alt="장바구니" class="bag">
+                                    </a>
+                                </div>
+                                <h3><span>20%</span>48,000원<b>60,000원</b></h3>
+                                <h4>민감성·건성 피부 트러블 케어 세트</h4>
+                                <p>시그니처 유황 & 그린티 콜라보</p>
+                            </li>
+
+                            <!-- 2 -->
+                            <li>
+                                <div class="product">
+                                    <a href="#"><img src="./img/p_set2.png" alt="패키지2"></a>
+                                    <img src="./img/num_2.png" alt="2">
+                                 
+                                    <a href="#"><img src="./img/favorite.png" alt="관심" class="heart">
+                                    </a>
+                                    <a href="#"><img src="./img/bag.png" alt="장바구니" class="bag">
+                                    </a>
+                                </div>
+                                <h3><span>20%</span>48,000원<b>60,000원</b></h3>
+                                <h4>수부지·복합성 피부 타입 케어 세트</h4>
+                                <p>수분부족지성피부 / 좁쌀, 모공, 각질 케어 특화  </p>
+                            </li>
+
+                            <!-- 3 -->
+                            <li>
+                                <div class="product">
+                                    <a href="#"><img src="./img/p_set3.jpg" alt="패키지3"></a>
+                                    <img src="./img/num_3.png" alt="3">
+                                
+                                    <a href="#"><img src="./img/favorite.png" alt="관심" class="heart">
+                                    </a>
+                                    <a href="#"><img src="./img/bag.png" alt="장바구니" class="bag">
+                                    </a>
+                                </div>
+                                <h3><span>31%</span>17,010<b>25,000원</b></h3>
+                                <h4>아토미네랄 유황 케어 3종 세트</h4>
+                                <p>보습 / 각질 / 모공 / 탄력 </p>
+                            </li>
+
+                            <!-- 4 -->
+                            <li>
+                                <div class="product">
+                                    <a href="#"><img src="./img/p_set4.png" alt="패키지4"></a>
+                                    <img src="./img/num_4.png" alt="4">
+                                 
+                                    <a href="#"><img src="./img/favorite.png" alt="관심" class="heart">
+                                    </a>
+                                    <a href="#"><img src="./img/bag.png" alt="장바구니" class="bag">
+                                    </a>
+                                </div>
+                                <h3><span>31%</span>17,010원<b>25,000원</b></h3>
+                                <h4>그린티 유황 케어 3종 세트</h4>
+                                <p>피부진정 / 홍조케어/ 수분충전</p>
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+
+                <!-- 기타 유황제품 -->
+                <li><a href="#none">기타 유황제품</a>
+                    <div class="sulfur">
+                        <ol>
+                            <!-- 1 -->
+                            <li>
+                                <div class="product">
+                                    <a href="#"><img src="./img/p_etc1.png" alt="기타유황제품"></a>
+                                    <img src="./img/num_1.png" alt="1">
+                                  
+                                    <a href="#"><img src="./img/favorite.png" alt="관심" class="heart">
+                                    </a>
+                                    <a href="#"><img src="./img/bag.png" alt="장바구니" class="bag">
+                                    </a>
+                                </div>
+                                <h3><span>26%</span>18,500원<b>25,000원</b></h3>
+                                <h4>천연 유황 설거지바</h4>
+                                <p>기름기 제거에 탁월 / 합성 계면활성제 무첨가</p>
+                            </li>
+
+                            <!-- 2 -->
+                            <li>
+                                <div class="product">
+                                    <a href="#"><img src="./img/p_etc2.png" alt="기타유황제품"></a>
+                                    <img src="./img/num_2.png" alt="2">
+                                    
+                                    <a href="#"><img src="./img/favorite.png" alt="관심" class="heart">
+                                    </a>
+                                    <a href="#"><img src="./img/bag.png" alt="장바구니" class="bag">
+                                    </a>
+                                </div>
+                                <h3><span>29%</span>26,700원<b>38,000원</b></h3>
+                                <h4>자연유황 비료</h4>
+                                <p>유황 3% 함유, 토양 산도 조절 및 작물 성장 촉진</p>
+                            </li>
+
+                            <!-- 3 -->
+                            <li>
+                                <div class="product">
+                                    <a href="#"><img src="./img/p_etc33.png" alt="기타유황제품"></a>
+                                    <img src="./img/num_3.png" alt="3">
+                                    
+                                    <a href="#"><img src="./img/favorite.png" alt="관심" class="heart">
+                                    </a>
+                                    <a href="#"><img src="./img/bag.png" alt="장바구니" class="bag">
+                                    </a>
+                                </div>
+                                <h3><span>19%</span>32,400원<b>40,000원</b></h3>
+                                <h4>고농도 유황 화학비료</h4>
+                                <p>유황 4% 함유, 영양 흡수 개선 및 토양 건강 증진</p>
+                            </li>
+
+                            <!-- 4 -->
+                            <li>
+                                <div class="product">
+                                    <a href="#"><img src="./img/p_etc4.png" alt="기타유황제품"></a>
+                                    <img src="./img/num_4.png" alt="4">
+                                    
+                                    <a href="#"><img src="./img/favorite.png" alt="관심" class="heart">
+                                    </a>
+                                    <a href="#"><img src="./img/bag.png" alt="장바구니" class="bag">
+                                    </a>
+                                </div>
+                                <h3><span>20%</span>16,000원<b>20,000원</b></h3>
+                                <h4>편온(便溫) 유황차</h4>
+                                <p>유황 1.2% 함유 / 20티백입 / 무카페인 허브차</p>
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- store 더보기 버튼 -->
+            <a href="#" class="s_btn">더보기</a>
+        </div>
+    </div>
+
+    <!-- EVENT -->
+    <div class="event">
+        <h2>EVENT</h2>
+        <div class="line"></div>
+
+        <!-- 갤러리 센터 슬라이드 -->
+        <div class="swiper center">
+            <div class="swiper-wrapper">
+                <!-- 1 -->
+                <div class="swiper-slide">
+                    <div class="c_imgbox">
+                        <a href="#"><img src="./img/cream.png" alt="크림"></a>
+                    </div>
+
+                    <div class="c_text">
+                        <h4>유황 크림 체험단 모집</h4>
+                        <h6>유황 크림을 직접 체험해볼 기회! <br>
+                            모집인원: 선착순 150명 </h6>
+                        <p>2025.06.01 - 2025.06.24</p>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="swiper-slide">
+                    <div class="c_imgbox">
+                        <a href="#"><img src="./img/summer.png" alt="요가"></a>
+                    </div>
+
+                    <div class="c_text">
+                        <h4>썸머 힐링 스파 패키지</h4>
+                        <h6>주중 : 객실 + 스파피아 <br>
+                            주말 : 객실 + 스파피아 + 조식뷔페(2인)</h6>
+                        <p>2025.06.01 - 2025.09.01</p>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="swiper-slide">
+                    <div class="c_imgbox">
+                        <a href="#"><img src="./img/meditation.png" alt="명상"></a>
+                    </div>
+
+                    <div class="c_text">
+                        <h4>명상 스테이 패키지</h4>
+                        <h6>몸과 마음이 평온해지는 시간. <br>
+                            객실 + 온천 + 조식뷔페 + 석식 + 명상</h6>
+                        <p>2025.06.01 - 2025.07.30</p>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="swiper-slide">
+                    <div class="c_imgbox">
+                        <a href="#"><img src="./img/SNS_event.png" alt="명상"></a>
+                    </div>
+
+                    <div class="c_text">
+                        <h4>유황 로션 증정 EVENT</h4>
+                        <h6>객실 이용객 선착순 유황로션 1개 증정! <br>
+                            매일 한정수량: 100개</h6>
+                        <p>2025.06.07~2025.07.07</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="swiper-button-next r_next"></div>
+        <div class="swiper-button-prev r_left"></div>
+    </div>
+
+    <!-- 멤버십 -->
+    <div class="membership">
+        <div class="m_text" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
+            <h4>CLUB ‘황온’</h4>
+            <p>품격있는 서비스와 다채로운 라이프 스타일을 선사하는 <br>
+                황온유황온천리조트의 통합 멤버십 프로그램, 클럽 황온(CLUB ‘황온’) <br>
+                지금 회원만을 위한 특별한 혜택과 경험을 확인해보세요.</p>
+            <ul>
+                <li><a href="#none">VIEW MORE & JOIN</a>
+                </li>
+                <li><a href="#none">MEMBER’S EVNET</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 커뮤니티 -->
+    <div class="community">
+        <h2>COMMUNITY</h2>
+        <div class="line_wc"></div>
+        <div class="community_in">
+            <!-- 공지사항 -->
+            <div class="notice">
+                <h4>공지사항</h4>
+                <a href="#none" class="n1">
+                    <div class="n_text">
+                        <p>금액 변경 안내<span>2024.12.02</span></p>
+                    </div>
+                </a>
+
+                <a href="#none" class="n1">
+                    <div class="n_text">
+                        <p>[황온스파] 수영복 및 물품 대여안내<span>2024.09.01</span></p>
+                    </div>
+                </a>
+
+                <a href="#none" class="n1">
+                    <div class="n_text">
+                        <p>황온유황온천, 부대시설 리뉴얼 오픈<span>2024.06.24</span></p>
+                    </div>
+                </a>
+
+                <a href="#none" class="n1">
+                    <div class="n_text">
+                        <p>황온유황온천 리뉴얼<span>2024.03.15</span></p>
+                    </div>
+                </a>
+                <a href="#" class="c_arrow">More<img src="./img/right.png" alt="오른쪽 화살표"></a>
+            </div>
+
+            <!-- Q&A -->
+            <div class="quest">
+                <h4>Have Question?</h4>
+
+                    <table>
+                        <tr>
+                            <td> <input type="text" placeholder="First Name"></td>
+                            <td><input type="text" placeholder="Last Name"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="email" placeholder="Email"></td>
+                            <td> <input type="tel" placeholder="Phone"></td>
+                        </tr>
+                    </table>
+                    <p>Massage</p>
+                    <textarea></textarea>
+                    <input type="submit" value="Send">
+
+            </div>
+        </div>
+
+        <!-- location -->
+        <div class="location">
+            <h2>Location </h2>
+            <div class="line_w"></div>
+            <div class="l_p">
+                <h5><b>위치</b> 부산광역시 중구 중앙대로 26</h5>
+                <h5><b>고객센터</b> <span>051-334-6179</span></h5>
+            </div>
+            <div class="bus">
+                <img src="./img/bus.png" alt="버스">
+                <div class="pp">
+                    <h5>버스</h5>
+                    <p>약 4분 소요</p>
+                </div>
+
+                <p>부산역 정류장 도보 5분 → 급행1003번 (중부경찰서삼거리 방면)→  부산데파트 정류장 하차 → 황온중앙타워 도보 2분 </p>
+            </div>
+            <div class="subway">
+                <img src="./img/subway.png" alt="지하철">
+                <div class="pp">
+                    <h5>지하철</h5>
+                    <p>약 16분 소요</p>
+                </div>
+
+                <p>부산역 승차 → (중앙역 방면) 다대포해수욕장행 → 중앙역 하차 → 1번출구 도보 9분</p>
+            </div>
+        </div>
+
+        <!-- 지도 -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.2701539021264!2d129.03440477651603!3d35.09996447278056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568e973030f522f%3A0x29b062cddf103310!2z67aA7IKw6rSR7Jet7IucIOykkeq1rCDspJHslZnrjIDroZwgMjY!5e0!3m2!1sko!2skr!4v1748850795195!5m2!1sko!2skr"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer_top">
+            <ul class="f_left">
+                <li><a href="#">개인정보처리방침</a></li>
+                <li>｜</li>
+                <li><a href="#">이용약관</a></li>
+                <li>｜</li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li>｜</li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+
+            <ul class="f_right">
+                <li><a href="#"><img src="./img/facebook.png" alt="페이스북"></a></li>
+                <li><a href="#"><img src="./img/youtube.png" alt="유튜브"></a></li>
+                <li><a href="#"><img src="./img/insta.png" alt="인스타"></a></li>
+            </ul>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="fb_in">
+                <a href="#"><img src="./img/w_logo.png" alt="로고"></a>
+                <p>(주) 황온유황온천 부산광역시 중구 중앙대로 26 황온중앙타워 Tel 051- 334 - 6179 Fax 051-334 - 6100 <br>
+                    사업자등록번호 971-61-00334 통신판매번호 제 2025-부산황온-212호 대표이사 박유민 <br>
+                    Copyrightⓒ2025 Hwangon.All Rights Reserved. </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- 스크롤 부드럽게 JS -->
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+
+    <!-- GSAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+
+    <!-- 스크롤 시 떠오르는 텍스트 효과 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- 탑 버튼 -->
+    <a href="#" class="top_btn"><img src=".//img/top_btn.png" alt="탑버튼"></a>
+
+    <!-- 스크롤 부드럽게 JS -->
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+
+    <!-- 헤더 고정 및 스크롤 js -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <!-- 제이쿼리 JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- 달력 JS -->
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js"></script>
+
+    <!-- 프로그램 SCROLL JS -->
+    <script src="./script/jquery.simplyscroll.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 내 꺼 script -->
+    <script src="./script/script.js"></script>
+
+
+</body>
+
+</html>
